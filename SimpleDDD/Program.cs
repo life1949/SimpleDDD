@@ -10,6 +10,7 @@ namespace SimpleDDD
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("welcome ddd");
         }
     }
 }
