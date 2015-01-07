@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDDD", "SimpleDDD\SimpleDDD.csproj", "{7A6518E6-96E0-4BB5-BB99-B13049D2D015}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDDD.Commands", "SimpleDDD.Commands\SimpleDDD.Commands.csproj", "{9930A624-6B66-4579-B317-F0A287C78154}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleDDD.Events", "SimpleDDD.Events\SimpleDDD.Events.csproj", "{44831842-152A-42BB-97D4-0251E0BD1367}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +17,14 @@ Global
 		{7A6518E6-96E0-4BB5-BB99-B13049D2D015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A6518E6-96E0-4BB5-BB99-B13049D2D015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A6518E6-96E0-4BB5-BB99-B13049D2D015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9930A624-6B66-4579-B317-F0A287C78154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9930A624-6B66-4579-B317-F0A287C78154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9930A624-6B66-4579-B317-F0A287C78154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9930A624-6B66-4579-B317-F0A287C78154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44831842-152A-42BB-97D4-0251E0BD1367}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44831842-152A-42BB-97D4-0251E0BD1367}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44831842-152A-42BB-97D4-0251E0BD1367}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44831842-152A-42BB-97D4-0251E0BD1367}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -47,6 +47,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleDDD.Commands\SimpleDDD.Commands.csproj">
+      <Project>{9930a624-6b66-4579-b317-f0a287c78154}</Project>
+      <Name>SimpleDDD.Commands</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SimpleDDD.Events\SimpleDDD.Events.csproj">
+      <Project>{44831842-152a-42bb-97d4-0251e0bd1367}</Project>
+      <Name>SimpleDDD.Events</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
