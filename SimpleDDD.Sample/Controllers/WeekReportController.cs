@@ -7,7 +7,7 @@ using System.Web.Mvc;
 namespace SimpleDDD.Sample.Controllers
 {
     public class WeekReportController : Controller
-    {
+    { 
         //
         // GET: /WeekReport/
 
