@@ -10,6 +10,6 @@ namespace SimpleDDD.Events
     {
         public Guid ID { get; private set; }
         public Guid AggregateID { get; set; }
-
+        public int Version { get; set; }
     }
 }

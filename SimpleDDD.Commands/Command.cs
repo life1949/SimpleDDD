@@ -9,5 +9,6 @@ namespace SimpleDDD.Commands
     public class Command : ICommand
     {
         public Guid ID { get; private set; }
+        public int Version { get; set; }
     }
 }
