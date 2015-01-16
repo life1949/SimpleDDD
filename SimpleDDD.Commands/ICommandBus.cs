@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SimpleDDD.Events
+namespace SimpleDDD.Commands
 {
-    public interface IEventPublisher
+    public interface ICommandBus
     {
-        void Publisher<T>(T ievent) where T : IEvent;
+        void Send<T>(T command) where T : Command;
     }
 }
