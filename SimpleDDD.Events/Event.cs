@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace SimpleDDD.Events
 {
+    [Serializable]
     public class Event:IEvent
     {
         public Guid ID { get; private set; }
