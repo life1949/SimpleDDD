@@ -17,7 +17,7 @@ namespace SimpleDDD.Sample.Tests.Controllers
         public void Get()
         {
             // 排列
-            ValuesController controller = new ValuesController();
+            UserController controller = new UserController();
 
             // 操作
             IEnumerable<string> result = controller.Get();
@@ -33,7 +33,7 @@ namespace SimpleDDD.Sample.Tests.Controllers
         public void GetById()
         {
             // 排列
-            ValuesController controller = new ValuesController();
+            UserController controller = new UserController();
 
             // 操作
             string result = controller.Get(5);
@@ -46,7 +46,7 @@ namespace SimpleDDD.Sample.Tests.Controllers
         public void Post()
         {
             // 排列
-            ValuesController controller = new ValuesController();
+            UserController controller = new UserController();
 
             // 操作
             controller.Post("value");
@@ -58,7 +58,7 @@ namespace SimpleDDD.Sample.Tests.Controllers
         public void Put()
         {
             // 排列
-            ValuesController controller = new ValuesController();
+            UserController controller = new UserController();
 
             // 操作
             controller.Put(5, "value");
@@ -70,7 +70,7 @@ namespace SimpleDDD.Sample.Tests.Controllers
         public void Delete()
         {
             // 排列
-            ValuesController controller = new ValuesController();
+            UserController controller = new UserController();
 
             // 操作
             controller.Delete(5);

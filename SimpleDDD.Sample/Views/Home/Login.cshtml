@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Login";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12"></div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label>用户名</label>
+        </div>
+        <div class="col-md-6">
+            <input type="text" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>密码</label>
+        </div>
+        <div class="col-md-6">
+            <input type="password" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <a href="/Home/Register">注册</a>
+        </div>
+        <div class="col-md-6">
+            <input type="button" id="login" value="登录" />
+        </div>
+    </div>
+</div>
+
+@section src
+{
+    <script>
+        $(function () {
+            $("#login").click(function () {
+                $.ajax({
+                    "type": "get",
+                    "url": "/api/user/",
+                    "data": { "id": "" },
+                    "dataType": "json",
+                    "success": function (e) {
+                        console.log(e);
+                    }
+                });
+            });
+        });
+    </script>
+}

@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Register";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <label>用户名</label>
+        </div>
+        <div class="col-md-6">
+            <input type="text" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <label>密码</label>
+        </div>
+        <div class="col-md-6">
+            <input type="password" />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <input type="button" id="regitser" value="注册" />
+        </div>
+    </div>
+</div>
+
+@section src
+{
+    <script>
+        $(function () {
+            $("#regitser").click(function () {
+                $.ajax({
+                    "type": "post",
+                    "url": "/api/user/",
+                    "data": { "name": "111111", "password": "1" },
+                    "dataType": "json",
+                    "success": function (e) {
+                        console.log(e);                            
+                    }
+                });
+            });
+        });
+    </script>
+}
